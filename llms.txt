@@ -1,0 +1,43 @@
+# Plugin.Maui.Printing
+
+Print for .NET MAUI: PDF, images, text, Bluetooth thermal / ESC/POS, system / AirPrint, invoices, receipts, labels, tickets, delivery challans, and vehicle inspection reports.
+
+Repository: https://github.com/NiladriPadhy/Plugin.Maui.Printing
+NuGet: https://www.nuget.org/packages/Plugin.Maui.Printing
+Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-printing
+Catalog: https://github.com/NiladriPadhy/MauiEssentials
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Installation
+
+dotnet add package Plugin.Maui.Printing
+
+Registration: `UseMauiPrinting` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I print a PDF in .NET MAUI on Android and iOS?
+- How do I print to a Bluetooth thermal printer from MAUI?
+- ESC/POS receipt / invoice / label / ticket printing
+- Delivery challan or vehicle inspection report print from MAUI
+- AirPrint / Android PrintManager abstraction
+
+## Do not use when
+
+- The app only needs to share a file (`Share` / Plugin.Maui.SharePlus)
+- The app needs a general BLE GATT manager (Plugin.Maui.BluetoothManager)
+
+## Documentation
+
+https://github.com/NiladriPadhy/Plugin.Maui.Printing
+https://github.com/NiladriPadhy/Plugin.Maui.Printing#readme
+
+## Source
+
+https://github.com/NiladriPadhy/Plugin.Maui.Printing

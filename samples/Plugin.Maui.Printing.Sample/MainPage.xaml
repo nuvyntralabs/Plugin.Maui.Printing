@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plugin.Maui.Printing.Sample.MainPage"
+             Title="Printing">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="10">
+            <Label Text="Plugin.Maui.Printing" FontSize="22" FontAttributes="Bold" />
+            <Label Text="PDF · images · text · Bluetooth thermal · invoice / receipt / label / ticket / challan / inspection"
+                   TextColor="Gray" />
+
+            <Label x:Name="AvailabilityLabel" FontSize="13" LineBreakMode="WordWrap" />
+            <Label x:Name="ResultLabel" FontSize="14" FontAttributes="Bold" TextColor="{StaticResource Primary}" />
+
+            <Picker x:Name="TargetPicker" Title="Printer target" />
+            <Entry x:Name="AddressEntry" Placeholder="Bluetooth address / BLE UUID (optional)" />
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Discover" Clicked="OnDiscoverClicked" />
+                <Button Text="Permissions" Clicked="OnPermissionsClicked" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Print text" Clicked="OnPrintTextClicked" />
+                <Button Text="Print PDF" Clicked="OnPrintPdfClicked" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Print image" Clicked="OnPrintImageClicked" />
+                <Button Text="Print receipt" Clicked="OnPrintReceiptClicked" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Invoice" Clicked="OnPrintInvoiceClicked" />
+                <Button Text="Label" Clicked="OnPrintLabelClicked" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Ticket" Clicked="OnPrintTicketClicked" />
+                <Button Text="Challan" Clicked="OnPrintChallanClicked" />
+            </HorizontalStackLayout>
+            <Button Text="Inspection report" Clicked="OnPrintInspectionClicked" />
+
+            <Label Text="Events" FontAttributes="Bold" Margin="0,12,0,0" />
+            <Label x:Name="LogLabel" FontFamily="Courier New" FontSize="12" LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
