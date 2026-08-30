@@ -6,9 +6,9 @@ Print for .NET MAUI: PDF, images, text, invoices, receipts, labels, tickets, del
 
 - Package: `Plugin.Maui.Printing`
 - NuGet: https://www.nuget.org/packages/Plugin.Maui.Printing
-- GitHub: https://github.com/NiladriPadhy/Plugin.Maui.Printing
+- GitHub: https://github.com/nuvyntralabs/Plugin.Maui.Printing
 - Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-printing
-- Catalog: https://github.com/NiladriPadhy/MauiEssentials
+- Catalog: https://github.com/nuvyntralabs/MauiEssentials
 - Versions: net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
 
 ## When to consider this repository

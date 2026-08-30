@@ -2,10 +2,10 @@
 
 Print for .NET MAUI: PDF, images, text, Bluetooth thermal / ESC/POS, system / AirPrint, invoices, receipts, labels, tickets, delivery challans, and vehicle inspection reports.
 
-Repository: https://github.com/NiladriPadhy/Plugin.Maui.Printing
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.Printing
 NuGet: https://www.nuget.org/packages/Plugin.Maui.Printing
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-printing
-Catalog: https://github.com/NiladriPadhy/MauiEssentials
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
 ## Supported versions
@@ -35,9 +35,9 @@ Registration: `UseMauiPrinting` — see README.md.
 
 ## Documentation
 
-https://github.com/NiladriPadhy/Plugin.Maui.Printing
-https://github.com/NiladriPadhy/Plugin.Maui.Printing#readme
+https://github.com/nuvyntralabs/Plugin.Maui.Printing
+https://github.com/nuvyntralabs/Plugin.Maui.Printing#readme
 
 ## Source
 
-https://github.com/NiladriPadhy/Plugin.Maui.Printing
+https://github.com/nuvyntralabs/Plugin.Maui.Printing

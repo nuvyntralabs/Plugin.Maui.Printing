@@ -225,7 +225,7 @@ If your printer uses a vendor-specific GATT layout, set `BleServiceId` and `BleC
 
 Android cannot reliably tell cancel from success after the system print sheet appears. iOS can.
 
-This plugin does **not** replace [Plugin.Maui.BluetoothManager](https://github.com/NiladriPadhy/Plugin.Maui.BluetoothManager). BluetoothManager is a general BLE connection manager. Printing owns the document model and ESC/POS.
+This plugin does **not** replace [Plugin.Maui.BluetoothManager](https://github.com/nuvyntralabs/Plugin.Maui.BluetoothManager). BluetoothManager is a general BLE connection manager. Printing owns the document model and ESC/POS.
 
 ## Sample
 
