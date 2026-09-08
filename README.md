@@ -244,7 +244,7 @@ dotnet build samples/Plugin.Maui.Printing.Sample/Plugin.Maui.Printing.Sample.csp
 dotnet pack src/Plugin.Maui.Printing/Plugin.Maui.Printing.csproj -c Release -o artifacts
 ```
 
-The `.nupkg` is written to `artifacts/Plugin.Maui.Printing.1.0.0.nupkg`.
+The `.nupkg` is written to `artifacts/Plugin.Maui.Printing.1.0.4.nupkg`.
 
 ## License
 

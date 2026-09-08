@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.4
+
+- Align the README pack path with the shipped package version.
+- Include a small Android resource so the library AAR is a valid zip (empty AAR broke project-reference sample builds).
+
 ## 1.0.0
 
 - Print for .NET MAUI on Android and iOS
