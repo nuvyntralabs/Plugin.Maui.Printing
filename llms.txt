@@ -4,7 +4,7 @@ Print for .NET MAUI: PDF, images, text, Bluetooth thermal / ESC/POS, system / Ai
 
 Repository: https://github.com/nuvyntralabs/Plugin.Maui.Printing
 NuGet: https://www.nuget.org/packages/Plugin.Maui.Printing
-Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-printing
+Paper: https://nuvyntralabs.github.io/packages/plugin-maui-printing/
 Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 

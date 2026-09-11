@@ -201,11 +201,27 @@ Preview ESC/POS without a printer:
 byte[] commands = Printer.EncodeEscPos(receipt);
 ```
 
-## Platform notes
+## Permissions
 
-**Android** — PDF, images, and text go through `PrintManager` (images and text are wrapped in a one-page PDF). Thermal jobs open a Classic Bluetooth SPP socket (`00001101-0000-1000-8000-00805F9B34FB`) to a paired printer. Pair the printer in Android Settings first. Runtime permission is `BLUETOOTH_CONNECT` / `BLUETOOTH_SCAN` on API 31+, or Bluetooth + location on older APIs. The library manifest merges those permissions.
+PDF / AirPrint needs no extra keys. Bluetooth thermal printing does.
 
-**iOS** — PDF, images, and text use AirPrint. Generic Classic SPP is not available without MFi. Thermal jobs write ESC/POS over BLE. Add usage strings:
+### Android
+
+The library manifest merges these. Declare them on the host if you merge manifests manually:
+
+```xml
+<uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+```
+
+`BLUETOOTH_CONNECT` / `BLUETOOTH_SCAN` are runtime permissions on API 31+. Pair the printer in Android Settings first.
+
+### iOS
+
+AirPrint needs no usage string. BLE thermal jobs need:
 
 ```xml
 <key>NSBluetoothAlwaysUsageDescription</key>
@@ -213,6 +229,12 @@ byte[] commands = Printer.EncodeEscPos(receipt);
 <key>NSBluetoothPeripheralUsageDescription</key>
 <string>This app sends receipts to nearby Bluetooth printers.</string>
 ```
+
+## Platform notes
+
+**Android** — PDF, images, and text go through `PrintManager` (images and text are wrapped in a one-page PDF). Thermal jobs open a Classic Bluetooth SPP socket (`00001101-0000-1000-8000-00805F9B34FB`) to a paired printer.
+
+**iOS** — PDF, images, and text use AirPrint. Generic Classic SPP is not available without MFi. Thermal jobs write ESC/POS over BLE.
 
 If your printer uses a vendor-specific GATT layout, set `BleServiceId` and `BleCharacteristicId`. The defaults (`18F0` / `2AF1`) match many portable ESC/POS printers; `FFE1` is also probed.
 
@@ -244,7 +266,7 @@ dotnet build samples/Plugin.Maui.Printing.Sample/Plugin.Maui.Printing.Sample.csp
 dotnet pack src/Plugin.Maui.Printing/Plugin.Maui.Printing.csproj -c Release -o artifacts
 ```
 
-The `.nupkg` is written to `artifacts/Plugin.Maui.Printing.1.0.4.nupkg`.
+The `.nupkg` is written to `artifacts/Plugin.Maui.Printing.1.0.5.nupkg`.
 
 ## License
 

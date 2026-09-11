@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+- Document Android and iOS host permissions required for the plugin to work.
+
 ## 1.0.4
 
 - Align the README pack path with the shipped package version.

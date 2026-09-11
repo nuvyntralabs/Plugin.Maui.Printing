@@ -30,7 +30,7 @@
     <PackageProjectUrl>https://nuvyntralabs.github.io/packages/plugin-maui-printing/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nuvyntralabs/Plugin.Maui.Printing</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <PackageReleaseNotes>Align the README pack path and ship a valid Android library AAR.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
